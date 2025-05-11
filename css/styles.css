@@ -1,0 +1,183 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 120px; /* Margin bottom by footer height */
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 30px;
+	margin-bottom: 14px;
+}
+
+.navbar-brand {
+  font-size: 2.2em;
+  font-family: 'Caveat', cursive;
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+}
+
+.col {
+  margin-bottom: 25px;
+}
+
+.pic-links {
+  color: white;
+}
+
+.pic-links:hover {
+  color: white;
+}
+
+.img-thumbnail{
+  padding: padding .5em;
+  margin: 2em 2em 0 0;
+
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  font-size: .8rem;
+  bottom: 0;
+  width: 100%;
+  line-height: 1.8em;
+  padding: 20px 0;
+}
+
+.home-img {
+  position: relative;
+	overflow: hidden;
+}
+
+.social {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align:center;
+}
+
+.social img {
+  width:40px;
+  margin:0 20px;
+  transition: .3s ease-out;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+  opacity: .5;
+}
+
+
+/* ---- Photo Overlay ---- */
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .65);
+}
+
+/* =================================
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+  transition-duration: 1s;
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.photo-overlay:hover {
+  opacity: 1;
+}
+
+/* =================================
+  Button Transitions
+==================================== */
+/* =================================
+  Image Transforms & Transitions
+==================================== */
+img {
+  transition: transform .8s;
+}
+.img-thumbnail:hover {
+  transform: rotate(-5deg);
+}
+
+.home-img img {
+  transform-origin: 50 50;
+}
+
+.home-img:hover img {
+  transform: scale(1.2);
+}
+
+/* =================================
+  Photo 3D Transforms & Transitions
+==================================== */
+.logo {
+	transition: transform 1.5s;
+	perspective: 800px;
+}
+.logo:hover {
+	transform: rotateZ(360deg);
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (max-width: 768px) {
+  h3 {
+    padding-top: 1em;
+  }
+  .side-img {
+    display: none;
+  }
+  .photo-overlay {
+  	display: none;
+  }
+  .img-thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .display-3 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 390px) {
+  .social img {
+    width:35px;
+    margin:-20px 15px 50px 0;
+  }
+  .logo {
+  	display: none;
+  }
+  .navbar-brand {
+    font-size: 2em;
+}

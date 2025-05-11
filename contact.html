@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photographer Portfolio | Contact</title>
+  </head>
+  <body>
+    <header>
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+         <div class="container-fluid my-2">
+           <div>
+           <a class="navbar-brand" href="index.html">faux photographer</a>
+           <img class="logo" src="img/camera.svg">
+           </div>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+             <div class="navbar-nav ml-auto">
+               <a class="nav-item nav-link" href="index.html">home</a>
+               <a class="nav-item nav-link" href="beverages.html">beverages</a>
+               <a class="nav-item nav-link" href="vehicles.html">vehicles</a>
+               <a class="nav-item nav-link" href="nature.html">nature</a>
+               <a class="nav-item nav-link  active" href="contact.html">contact<span class="sr-only">(current)</span></a>
+             </div>
+           </div>
+         </div>
+         </nav>
+    </header>
+
+    <main>
+        <!-- image gallery -->
+        <div class="container pt-5 mt-4">
+          <form action="" class="bg-light pb-5 pt-3">
+            <div class="form-row mt-5">
+              <div class="col-lg-2"></div>
+              <div class="form-group col-lg-4">
+                <label for="name">Your name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-2"></div>
+              <div class="form-group col-lg-8">
+              <label for="exampleFormControlTextarea1">How may I help you?</label>
+              <textarea class="form-control" id="yourNeeds" rows="6"></textarea>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-2"></div>
+              <div class="form-group col-lg-8">
+              <button type="button" class="btn btn-secondary btn-lg mt-3">Submit</button>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="form-row mt-5">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-10">*Form is for display purposes only.</div>
+              <div class="col-lg-2"></div>
+            </div>
+          </form>
+
+      </div>
+      <div class="social">
+        <a href="https://instagram.com" target="_blank"><img src="img/instagram.svg" alt="instagram"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter.svg" alt="twitter"></a>
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+      </div>
+    </main>
+
+    <footer class="footer bg-light">
+      <div class="container">
+        <span class="text-muted text-center">&copy;2018 Heidi Fryzell<br><cite>Photos courtesy of: <a href="https://www.pexels.com" target="_blank">pexels.com</a></cite> ~ <cite>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></cite></span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                        event.preventDefault();
+                        $(this).ekkoLightbox();
+                    });
+
+    </script>
+  </body>
+</html>
