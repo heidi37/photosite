@@ -8,12 +8,8 @@ A site built with Bootstrap 4. There are some basic CSS animations and utilizes 
 ### Tech Used:
 <img src="https://img.shields.io/badge/HTML-black?style=flat-square&logo=html5" alt="HTML5 badge" height="50"> <img src="https://img.shields.io/badge/CSS-black?style=flat-square&logo=css3" alt="CSS3 badge" height="50"> <img src="https://img.shields.io/badge/bootstrap-black?style=flat-square&logo=bootstrap" alt="bootstrap badge" height="50">
 
-Paragraph
-
 ## Optimizations
 - galleries at wide widths are not properly centered
-
-Paragraph
 
 ## Related Projects
 
